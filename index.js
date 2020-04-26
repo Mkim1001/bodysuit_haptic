@@ -11,7 +11,7 @@ const Readline = SerialPort.parsers.Readline;
 const port = new SerialPort("/dev/cu.usbmodem14201", {
     baudRate: 9600
 });
-
+port.write('a\n')
 app.use(express.static('public'));
 
 //Serve index.html when some make a request of the server

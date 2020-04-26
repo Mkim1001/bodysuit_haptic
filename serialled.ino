@@ -22,7 +22,7 @@
 */
 #include <Servo.h>
 
-//Servo myservo;
+//Servo myservo1;
 Servo myservo2;
 Servo myservo3;
 Servo myservo4;
@@ -43,7 +43,7 @@ int incomingByte;      // a variable to read incoming serial data into 
 void setup() {
   // initialize serial communication:
   Serial.begin(9600);
-  // myservo.attach();
+  // myservo1.attach(1);
    myservo2.attach(2); 
    myservo3.attach(3);
    myservo4.attach(4); 
@@ -76,11 +76,11 @@ void loop() {
       digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
       for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
         // in steps of 1 degree
-        myservo13.write(pos);              // tell servo to go to position in variable 'pos'
+        myservo6.write(pos);              // tell servo to go to position in variable 'pos'
         delay(15);                       // waits 15ms for the servo to reach the position
       }
       for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-        myservo13.write(pos);              // tell servo to go to position in variable 'pos'
+        myservo6.write(pos);              // tell servo to go to position in variable 'pos'
         delay(15);                       // waits 15ms for the servo to reach the position
       }
     }
@@ -92,11 +92,11 @@ void loop() {
       digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
       for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
         // in steps of 1 degree
-        myservo12.write(pos);              // tell servo to go to position in variable 'pos'
+        myservo7.write(pos);              // tell servo to go to position in variable 'pos'
         delay(15);                       // waits 15ms for the servo to reach the position
       }
       for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-        myservo12.write(pos);              // tell servo to go to position in variable 'pos'
+        myservo7.write(pos);              // tell servo to go to position in variable 'pos'
         delay(15);                       // waits 15ms for the servo to reach the position
       }
     }
@@ -109,11 +109,11 @@ void loop() {
       digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
       for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
         // in steps of 1 degree
-        myservo11.write(pos);              // tell servo to go to position in variable 'pos'
+        myservo13.write(pos);              // tell servo to go to position in variable 'pos'
         delay(15);                       // waits 15ms for the servo to reach the position
       }
       for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
-        myservo11.write(pos);              // tell servo to go to position in variable 'pos'
+        myservo13.write(pos);              // tell servo to go to position in variable 'pos'
         delay(15);                       // waits 15ms for the servo to reach the position
       }
     }
